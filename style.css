@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --base-font-color: hsla(240, 6%, 21%, 1);
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+
+
+  align-self: center;
+
+  align-items: center;
+  gap: 25rem;
+  min-width: 100vw;
+
+}
+
+main .timer .time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.61rem;
+  line-height: 14.8rem;
+  color: var(--base-font-color)
+}
+
+button {
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.timer {
+  min-width: 32.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  min-width: inherit;
+
+  margin-top: 2rem;
+}
+
+.controls button:hover svg path {
+  fill: #02799D;
+}
+
+.sounds {
+  display: grid;
+  gap: 3.2rem;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+
+.sounds button {
+  background: #E1E1E6;
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border-radius: 2.4rem;
+}
+
+.sounds .rain-sound svg path {
+  fill: #323238;
+}
+
+.sounds button:hover {
+  background: #02799D;
+}
+
+.sounds button:hover svg path {
+  fill: white;
+}
+
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    gap: 15rem;
+
+    margin: 3.5rem 0;
+  }
+
+  main .timer .time {}
+
+  .timer {
+    min-width: 32.1rem;
+  }
+
+  .controls {
+    min-width: inherit;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    gap: 8rem;
+  }
+}
