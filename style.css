@@ -42,6 +42,10 @@ button {
   cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
 .timer {
   min-width: 32.1rem;
   display: flex;
