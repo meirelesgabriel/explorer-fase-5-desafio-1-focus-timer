@@ -1,4 +1,8 @@
+import resetControls from './controls.js'
+
 export function Timer ({
+  playButton,
+  pauseButton,
   minutesDisplay,
   secondsDisplay,
 }) {
@@ -21,15 +25,17 @@ export function Timer ({
       let minutes = Number(minutesDisplay.textContent)
 
       if (seconds <= 0) {
-        seconds = 3
+        seconds = 60
   
         if (minutes <= 0) {
+          resetControls(playButton, pauseButton)
          return
         }
   
         // set timer:
+        minutes = minutes - 1
         //updateDisplay((minutes - 1), seconds)
-        minutesDisplay.textContent = String(minutes - 1).padStart(2, '0')
+        //minutesDisplay.textContent = String(minutes - 1).padStart(2, '0')
         console.log('entrouuuu')
       }
       // set timer:
