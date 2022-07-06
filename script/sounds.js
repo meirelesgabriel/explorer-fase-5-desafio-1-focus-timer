@@ -1,8 +1,8 @@
 export default function() {
-  const forestSound = new Audio('../sounds/Floresta.wav')
-  const rainSound = new Audio('../sounds/Chuva.wav')
-  const coffeShopSound = new Audio('../sounds/Cafeteria.wav')
-  const firePlaceSound = new Audio('../sounds/Lareira.wav')
+  const forestSound = new Audio('./sounds/Floresta.wav')
+  const rainSound = new Audio('./sounds/Chuva.wav')
+  const coffeShopSound = new Audio('./sounds/Cafeteria.wav')
+  const firePlaceSound = new Audio('./sounds/Lareira.wav')
 
   /*function pressForestButton() {
     forestSound.play()
